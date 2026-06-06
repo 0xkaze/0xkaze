@@ -96,10 +96,7 @@ const guilherme = {
 
 <p align="center">
   <img height="170" src="https://github-readme-stats.vercel.app/api?username=0xkaze&show_icons=true&hide_border=true&bg_color=0D1117&title_color=6BB1FF&icon_color=9B72FF&text_color=c9d1d9" alt="stats" />
-  <img height="170" src="https://streak-stats.demolab.com/?user=0xkaze&hide_border=true&background=0D1117&stroke=9B72FF&ring=6BB1FF&fire=00D4AA&currStreakLabel=6BB1FF&sideLabels=c9d1d9&dates=8b949e&currStreakNum=ffffff&sideNums=ffffff" alt="streak" />
 </p>
-
-
 
 <!-- ════════════════════════ SNAKE ════════════════════════ -->
 ## 🐍 Contribution Snake
