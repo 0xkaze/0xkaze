@@ -3,18 +3,18 @@
 
 <!-- ════════════════════════ TITLE ════════════════════════ -->
 <h1 align="center">Hi, I'm Guilherme Seguro 👋</h1>
-<h3 align="center">Full Stack Developer · AI &amp; Web3 · Cloud Architect · Founder @ GMS TECH</h3>
+<h3 align="center">Full Stack Developer · AI &amp; Web3 · Cloud Architect</h3>
 
 <p align="center">
-  <a href="https://github.com/Guilherme-Seguro">
+  <a href="https://github.com/0xkaze">
     <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1000&color=6BB1FF&center=true&vCenter=true&width=620&lines=Building+scalable+%26+innovative+software;Smart+contracts%2C+AI+automations+%26+web+apps;Ship+fast%2C+without+compromising+quality." alt="Typing SVG" />
   </a>
 </p>
 
 <!-- ════════════════════════ BADGES ════════════════════════ -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Guilherme-Seguro&label=Profile%20views&color=4A9EFF&style=flat-square" alt="views" />
-  <a href="https://github.com/Guilherme-Seguro?tab=followers"><img src="https://img.shields.io/github/followers/Guilherme-Seguro?label=Followers&style=flat-square&color=9B72FF" alt="followers" /></a>
+  <img src="https://komarev.com/ghpvc/?username=0xkaze&label=Profile%20views&color=4A9EFF&style=flat-square" alt="views" />
+  <a href="https://github.com/0xkaze?tab=followers"><img src="https://img.shields.io/github/followers/0xkaze?label=Followers&style=flat-square&color=9B72FF" alt="followers" /></a>
   <img src="https://img.shields.io/badge/Curitiba%2C%20BR-working%20globally-00D4AA?style=flat-square" alt="location" />
 </p>
 
@@ -25,7 +25,7 @@
 
 ```ts
 const guilherme = {
-  role: "Full Stack Developer & Founder @ GMS TECH",
+  role: "Full Stack Developer",
   age: 23,
   location: "Curitiba, Brazil 🇧🇷 — working globally 🌎",
   focus: ["Web Apps", "AI / LLMs", "Web3 / Smart Contracts", "Cloud & DevOps"],
@@ -39,20 +39,6 @@ const guilherme = {
 - ⚙️ Strong in **API design, system architecture & DevOps**
 - 📚 Deep-diving into **LLMs**, **RAG** and **graph databases**
 - 💬 Ask me about **going from MVP to production**
-
-<br/>
-
-<!-- ════════════════════════ GMS TECH ════════════════════════ -->
-## 🏢 GMS TECH — my software studio
-
-> We build **web apps, smart contracts and AI automations** for teams that need to move fast.
-
-<p>
-  <a href="https://gmstech.dev"><img src="https://img.shields.io/badge/🌐%20gmstech.dev-0D1117?style=for-the-badge" alt="site" /></a>
-  <img src="https://img.shields.io/badge/⛓️%20100%2B%20contracts%20deployed-0D1117?style=for-the-badge" alt="contracts" />
-  <img src="https://img.shields.io/badge/🛡️%200%20security%20incidents-0D1117?style=for-the-badge" alt="security" />
-  <img src="https://img.shields.io/badge/⚡%203M%2B%20on--chain%20txs-0D1117?style=for-the-badge" alt="txs" />
-</p>
 
 <br/>
 
@@ -109,25 +95,25 @@ const guilherme = {
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Guilherme-Seguro&show_icons=true&hide_border=true&bg_color=0D1117&title_color=6BB1FF&icon_color=9B72FF&text_color=c9d1d9" alt="stats" />
-  <img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=Guilherme-Seguro&hide_border=true&background=0D1117&stroke=9B72FF&ring=6BB1FF&fire=00D4AA&currStreakLabel=6BB1FF" alt="streak" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=0xkaze&show_icons=true&hide_border=true&bg_color=0D1117&title_color=6BB1FF&icon_color=9B72FF&text_color=c9d1d9" alt="stats" />
+  <img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=0xkaze&hide_border=true&background=0D1117&stroke=9B72FF&ring=6BB1FF&fire=00D4AA&currStreakLabel=6BB1FF" alt="streak" />
 </p>
 
 <p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Guilherme-Seguro&layout=compact&hide_border=true&langs_count=8&bg_color=0D1117&title_color=6BB1FF&text_color=c9d1d9" alt="top langs" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=0xkaze&layout=compact&hide_border=true&langs_count=8&bg_color=0D1117&title_color=6BB1FF&text_color=c9d1d9" alt="top langs" />
 </p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Guilherme-Seguro&theme=onedark&no-frame=true&column=7&margin-w=8&title_color=6BB1FF" alt="trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=0xkaze&theme=onedark&no-frame=true&column=7&margin-w=8&title_color=6BB1FF" alt="trophies" />
 </p>
 
 <!-- ════════════════════════ SNAKE ════════════════════════ -->
 ## 🐍 Contribution Snake
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Guilherme-Seguro/Guilherme-Seguro/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Guilherme-Seguro/Guilherme-Seguro/output/github-snake.svg" />
-  <img alt="github contribution snake" src="https://raw.githubusercontent.com/Guilherme-Seguro/Guilherme-Seguro/output/github-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/0xkaze/0xkaze/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/0xkaze/0xkaze/output/github-snake.svg" />
+  <img alt="github contribution snake" src="https://raw.githubusercontent.com/0xkaze/0xkaze/output/github-snake.svg" />
 </picture>
 
 <br/>
@@ -135,7 +121,7 @@ const guilherme = {
 <!-- ════════════════════════ ACTIVITY ════════════════════════ -->
 ## 📈 Activity Graph
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Guilherme-Seguro&bg_color=0D1117&color=6BB1FF&line=9B72FF&point=00D4AA&hide_border=true&area=true" alt="activity graph" />
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=0xkaze&bg_color=0D1117&color=6BB1FF&line=9B72FF&point=00D4AA&hide_border=true&area=true" alt="activity graph" />
 
 <br/>
 
@@ -143,13 +129,10 @@ const guilherme = {
 ## 🤝 Connect
 
 <p align="center">
-  <a href="https://gmstech.dev"><img src="https://img.shields.io/badge/Website-4A9EFF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="website" /></a>
-  <a href="https://linkedin.com/company/g-ms-tech"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin" /></a>
-  <a href="mailto:contato@gmstech.dev"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="email" /></a>
-  <a href="https://t.me/g_mstech"><img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="telegram" /></a>
+  <a href="mailto:guilherme.seguro00@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="email" /></a>
   <a href="https://wa.me/5541984152304"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="whatsapp" /></a>
 </p>
 
-<p align="center"><i>"Software that works. Shipped in weeks."</i></p>
+<p align="center"><i>"Turning ideas into shipped software."</i></p>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:9B72FF,100:4A9EFF&height=120&section=footer" alt="" />
