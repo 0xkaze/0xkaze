@@ -1,0 +1,39 @@
+name: stats
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # 06:00 UTC = 03:00 em Curitiba
+  workflow_dispatch:      # permite rodar na mão pela aba Actions
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v6
+
+      # Card 1 — repositórios + contribuições (vai flutuando à direita no README)
+      - name: Contribution stats
+        uses: cicirello/user-statistician@v1
+        with:
+          image-file: images/contribs.svg
+          include-title: false
+          hide-keys: general, languages, private
+          colors: '#0D1117 #30363D #58A6FF #58A6FF #8B949E'
+          border-radius: 6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Card 2 — distribuição de linguagens
+      - name: Language distribution
+        uses: cicirello/user-statistician@v1
+        with:
+          image-file: images/languages.svg
+          include-title: false
+          hide-keys: general, contributions, repositories
+          colors: '#0D1117 #30363D #58A6FF #58A6FF #8B949E'
+          max-languages: 8
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
