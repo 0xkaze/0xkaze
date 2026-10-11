@@ -33,7 +33,7 @@ SECTIONS = [
         ("Host", "Curitiba, Brazil"),
         ("Kernel", "Full Stack Developer"),
         ("Focus", "AI & Web3 · Cloud Architecture"),
-        ("Hobbies", "Cars, Football"),
+        ("Hobbies", "Cars, Soccer"),
     ]),
     ("Languages", [
         ("Programming", "Python, TypeScript, JavaScript, Solidity, Java, C#"),
