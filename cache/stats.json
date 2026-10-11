@@ -1,9 +1,9 @@
 {
  "repos": 12,
- "contributed": null,
+ "contributed": 12,
  "stars": 0,
  "followers": 2,
- "commits": null,
- "loc_add": null,
- "loc_del": null
+ "commits": 84,
+ "loc_add": 203517,
+ "loc_del": 76530
 }

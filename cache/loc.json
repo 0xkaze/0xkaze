@@ -1,0 +1,62 @@
+{
+ "0xkaze/Leetcode-Daily-Practice": {
+  "add": 292,
+  "commits": 3,
+  "del": 0,
+  "oid": "635ea41dbe0bd80986bac8eb4cf5135f3a7413d2"
+ },
+ "0xkaze/cagi-website-backend": {
+  "add": 50165,
+  "commits": 15,
+  "del": 68,
+  "oid": "8b753429c5ac32b08dc5d48d40cc9a3310aa1f6f"
+ },
+ "0xkaze/cagi-website-frontend": {
+  "add": 5309,
+  "commits": 7,
+  "del": 289,
+  "oid": "5b7ea8afb42081e868f499b5e833af89020bed4c"
+ },
+ "0xkaze/ceopa-teste-vocacional": {
+  "add": 1826,
+  "commits": 2,
+  "del": 0,
+  "oid": "4eee7c0a9e7f05ce4af7869a5fc7e3406416f8a4"
+ },
+ "0xkaze/desafio-nodejs": {
+  "add": 1372,
+  "commits": 14,
+  "del": 19,
+  "oid": "dcfa23d718845679b5adeef0342ee007ccca4a46"
+ },
+ "0xkaze/farmacia-popular-v0.1": {
+  "add": 977,
+  "commits": 7,
+  "del": 75,
+  "oid": "482206f0157581169d16edf19d816f7c5c27b341"
+ },
+ "0xkaze/freezekits-2014": {
+  "add": 12621,
+  "commits": 4,
+  "del": 2,
+  "oid": "7f476744bcc937a5a2503be2a5345898eba1ea41"
+ },
+ "0xkaze/galaxystore-frontend": {
+  "add": 112040,
+  "commits": 19,
+  "del": 76032,
+  "oid": "e61c02240463bc44a9842986028a845b124a6abc"
+ },
+ "0xkaze/money-minder": {
+  "add": 18464,
+  "commits": 1,
+  "del": 0,
+  "oid": "79f0f0554ecb1e3ca312a56b4a7fb3827790c80b"
+ },
+ "0xkaze/whatsapp-simplebot": {
+  "add": 451,
+  "commits": 12,
+  "del": 45,
+  "oid": "9aa68015ae82fa73e06b186fca8571f52ee86ba2"
+ }
+}
