@@ -5,6 +5,42 @@
   "del": 0,
   "oid": "635ea41dbe0bd80986bac8eb4cf5135f3a7413d2"
  },
+ "0xkaze/SportsGambit-Admin": {
+  "add": 63250,
+  "commits": 54,
+  "del": 51328,
+  "oid": "beced5f8fcd0af9cc7b6cf52a935fb58557ace92"
+ },
+ "0xkaze/api-z6services": {
+  "add": 7976,
+  "commits": 26,
+  "del": 3785,
+  "oid": "a1f23cd315afbcdc51cb66de953ea1ab36f8bae4"
+ },
+ "0xkaze/astronautstore-frontend": {
+  "add": 36735,
+  "commits": 7,
+  "del": 290,
+  "oid": "5c74009118d6f2cd0d837be2b21f9d3291abcfaa"
+ },
+ "0xkaze/auratec-backend": {
+  "add": 5537,
+  "commits": 33,
+  "del": 505,
+  "oid": "28c0086ffda92576cd263fda75a9cd036708a6f3"
+ },
+ "0xkaze/auratec-frontend": {
+  "add": 44970,
+  "commits": 112,
+  "del": 12843,
+  "oid": "df8ddca6554dd4fdefce2bd455353a3962620c07"
+ },
+ "0xkaze/cagi-shop-backend": {
+  "add": 204,
+  "commits": 6,
+  "del": 14,
+  "oid": "9a9461b4b79523c1c0e60df2953dab16886dc929"
+ },
  "0xkaze/cagi-website-backend": {
   "add": 50165,
   "commits": 15,
@@ -17,11 +53,77 @@
   "del": 289,
   "oid": "5b7ea8afb42081e868f499b5e833af89020bed4c"
  },
+ "0xkaze/caify": {
+  "add": 311094,
+  "commits": 420,
+  "del": 86645,
+  "oid": "b2c7e77a2f0987666dfd5c511a4128848f22a188"
+ },
  "0xkaze/ceopa-teste-vocacional": {
   "add": 1826,
   "commits": 2,
   "del": 0,
   "oid": "4eee7c0a9e7f05ce4af7869a5fc7e3406416f8a4"
+ },
+ "0xkaze/chat-widget": {
+  "add": 19250,
+  "commits": 14,
+  "del": 407,
+  "oid": "45e5468ecc6b292f80953b831f8fbce8ee54d647"
+ },
+ "0xkaze/chat-widget-api": {
+  "add": 243,
+  "commits": 10,
+  "del": 37,
+  "oid": "90a7f3d3d26dfb1aa8c5b52ad61ebeecf5edeaf1"
+ },
+ "0xkaze/chatbot-gi-backend": {
+  "add": 429,
+  "commits": 27,
+  "del": 182,
+  "oid": "af5329ec93db54ee0aa9f292626bd423ca5892da"
+ },
+ "0xkaze/chatbot-gi-frontend": {
+  "add": 30475,
+  "commits": 10,
+  "del": 169,
+  "oid": "277c55b1c44aa58e80673676bc869699dfdc3010"
+ },
+ "0xkaze/cifra": {
+  "add": 63988,
+  "commits": 71,
+  "del": 2249,
+  "oid": "38469415ad34ed1c22b07ef4cf0bcefb679971c9"
+ },
+ "0xkaze/compra-online": {
+  "add": 24892,
+  "commits": 17,
+  "del": 1496,
+  "oid": "b434916e3d969dbbe50ef4177bce115bd685ba78"
+ },
+ "0xkaze/contasmurf-newfrontend": {
+  "add": 42262,
+  "commits": 56,
+  "del": 2801,
+  "oid": "e60468fbb26b76d43554a57d218afbc89fa5d02f"
+ },
+ "0xkaze/contassmurf-backend": {
+  "add": 19937,
+  "commits": 10,
+  "del": 83,
+  "oid": "394f61e932130eb88f01a773f63ea5347fa9d874"
+ },
+ "0xkaze/contassmurf-frontend": {
+  "add": 105450,
+  "commits": 87,
+  "del": 50314,
+  "oid": "0b0be68df656cc304a4159e93938d39aa6a294ba"
+ },
+ "0xkaze/crm-ebas": {
+  "add": 83193,
+  "commits": 158,
+  "del": 3821,
+  "oid": "a4259b0d06a889816d3b5466e18dd9f5aeb39c09"
  },
  "0xkaze/desafio-nodejs": {
   "add": 1372,
@@ -29,11 +131,41 @@
   "del": 19,
   "oid": "dcfa23d718845679b5adeef0342ee007ccca4a46"
  },
+ "0xkaze/duskmail": {
+  "add": 4223,
+  "commits": 10,
+  "del": 727,
+  "oid": "2e28bcb9f2c5b448720c0ee7eb34836975866289"
+ },
+ "0xkaze/fa-relatorios-dinamico": {
+  "add": 473192,
+  "commits": 1,
+  "del": 0,
+  "oid": "8c1f8ec0f10ceedd48e19c2be503ee15d1ca03bf"
+ },
  "0xkaze/farmacia-popular-v0.1": {
   "add": 977,
   "commits": 7,
   "del": 75,
   "oid": "482206f0157581169d16edf19d816f7c5c27b341"
+ },
+ "0xkaze/flynx-lp": {
+  "add": 37266,
+  "commits": 31,
+  "del": 8719,
+  "oid": "0005a308b2912fde3205b54c50cc57ded231b537"
+ },
+ "0xkaze/flynx-management": {
+  "add": 15056,
+  "commits": 28,
+  "del": 1579,
+  "oid": "94c5ba2b463e34187a6ad4265148a3242d8e5e07"
+ },
+ "0xkaze/flynx-management-backend": {
+  "add": 1677,
+  "commits": 22,
+  "del": 151,
+  "oid": "bfcacccec9fd30a3c905069a04adf23ea2ecdf32"
  },
  "0xkaze/freezekits-2014": {
   "add": 12621,
@@ -41,11 +173,89 @@
   "del": 2,
   "oid": "7f476744bcc937a5a2503be2a5345898eba1ea41"
  },
+ "0xkaze/fut": {
+  "add": 213741,
+  "commits": 260,
+  "del": 27341,
+  "oid": "eb7af1f3dd4b9a508faed7e8e0c1d1e1eda42cd5"
+ },
+ "0xkaze/fvckstore-backend": {
+  "add": 53666,
+  "commits": 89,
+  "del": 339,
+  "oid": "2d89d7932933fb6900ad701c5bd9127aae9c8ed0"
+ },
+ "0xkaze/fvckstore-frontend": {
+  "add": 37253,
+  "commits": 44,
+  "del": 1003,
+  "oid": "0ac1c64da2c51e59b4d287607386921928188f80"
+ },
  "0xkaze/galaxystore-frontend": {
   "add": 112040,
   "commits": 19,
   "del": 76032,
   "oid": "e61c02240463bc44a9842986028a845b124a6abc"
+ },
+ "0xkaze/gms-tech-lp": {
+  "add": 35461,
+  "commits": 22,
+  "del": 5119,
+  "oid": "33294da33eefe7b1101551937a62541acaa1b4ff"
+ },
+ "0xkaze/gmstech-caddy": {
+  "add": 1303,
+  "commits": 20,
+  "del": 272,
+  "oid": "4e184f370ef0ca8368edb6cc6aded6beeaec9f54"
+ },
+ "0xkaze/gmstech-operational": {
+  "add": 47742,
+  "commits": 33,
+  "del": 4980,
+  "oid": "e716aec709e575d0b40954d758fbc29d17062d44"
+ },
+ "0xkaze/gume": {
+  "add": 82324,
+  "commits": 126,
+  "del": 5404,
+  "oid": "c6d91ff34cd69abdaf8956ed588c560cd5f9c6ad"
+ },
+ "0xkaze/hero-os95": {
+  "add": 18017,
+  "commits": 1,
+  "del": 0,
+  "oid": "a0bcb2dd072fff3f0bed4d6d2454414d3b5d1c4a"
+ },
+ "0xkaze/indaga-ai": {
+  "add": 4055,
+  "commits": 2,
+  "del": 52,
+  "oid": "dd5e03cdcdbeb000e1de86556155f5ba131b3121"
+ },
+ "0xkaze/js-moveis": {
+  "add": 9322,
+  "commits": 22,
+  "del": 783,
+  "oid": "8c2d3a90a1af2c777c1a6527a0dd17c92b979eeb"
+ },
+ "0xkaze/kaze-sakura": {
+  "add": 21860,
+  "commits": 12,
+  "del": 9806,
+  "oid": "9b7abbea4ad033fb85c2dd453de05287d6a79b72"
+ },
+ "0xkaze/linkedin-leads-script": {
+  "add": 250,
+  "commits": 5,
+  "del": 13,
+  "oid": "f5c4db458545bc3b10e4d9fba842170a297d09ff"
+ },
+ "0xkaze/meada": {
+  "add": 77555,
+  "commits": 67,
+  "del": 4332,
+  "oid": "b3ac531b3feb35903e16e88a4f621769a22a3432"
  },
  "0xkaze/money-minder": {
   "add": 18464,
@@ -53,10 +263,382 @@
   "del": 0,
   "oid": "79f0f0554ecb1e3ca312a56b4a7fb3827790c80b"
  },
+ "0xkaze/nutrail": {
+  "add": 6733,
+  "commits": 33,
+  "del": 2320,
+  "oid": "842aabb0656468a4f75e9c0e7a6db62f6f1e76e3"
+ },
+ "0xkaze/oper-crm": {
+  "add": 83996,
+  "commits": 74,
+  "del": 14081,
+  "oid": "779ee0800cdaa26d8e6190908254a2fc10a549d2"
+ },
+ "0xkaze/prevencao-vacinas": {
+  "add": 12252,
+  "commits": 6,
+  "del": 65,
+  "oid": "ff6745f5df40ab6a6a4bcf751ce0d88f7eca641d"
+ },
+ "0xkaze/project-60": {
+  "add": 14634,
+  "commits": 1,
+  "del": 0,
+  "oid": "c1f1b8d610b251c042e4ceafce1dd1d9ec311e9c"
+ },
+ "0xkaze/quantx-homepage": {
+  "add": 7773,
+  "commits": 4,
+  "del": 195,
+  "oid": "cdde711ffdddb2b4978db38032824115059fd193"
+ },
+ "0xkaze/rodus-frotas": {
+  "add": 91992,
+  "commits": 144,
+  "del": 10108,
+  "oid": "99fd4f202ac3d842af1a549f3cb4ba0d74c1f023"
+ },
+ "0xkaze/ru-ufpr": {
+  "add": 1801,
+  "commits": 3,
+  "del": 288,
+  "oid": "e485b8843a598cc57f2c33de60ebeecdafbee55a"
+ },
+ "0xkaze/ru-ufpr-server": {
+  "add": 272,
+  "commits": 3,
+  "del": 0,
+  "oid": "03bd780a682dd399b516a3cbd0e660c8367c94d4"
+ },
+ "0xkaze/trabalho-ads-backend": {
+  "add": 147,
+  "commits": 3,
+  "del": 2,
+  "oid": "2e6d0786e65f29fa03bb9ca0ec1f09504bf54b77"
+ },
+ "0xkaze/trabalho-ads-frontend": {
+  "add": 277,
+  "commits": 1,
+  "del": 0,
+  "oid": "a515f80b403b777962cebb113bd5dfe535a43d1b"
+ },
+ "0xkaze/verax": {
+  "add": 98827,
+  "commits": 54,
+  "del": 23638,
+  "oid": "562b259b3f8b4899ae1f34136e07ce09c5f548a7"
+ },
  "0xkaze/whatsapp-simplebot": {
   "add": 451,
   "commits": 12,
   "del": 45,
   "oid": "9aa68015ae82fa73e06b186fca8571f52ee86ba2"
+ },
+ "0xkaze/widget-studio": {
+  "add": 12841,
+  "commits": 16,
+  "del": 1506,
+  "oid": "4a70db2e6ead533855c05eadb45464b09862e9a0"
+ },
+ "0xkaze/z6market": {
+  "add": 291103,
+  "commits": 333,
+  "del": 32747,
+  "oid": "726fafbc178c8c8a51f0f5f2dedff70767cf3dd7"
+ },
+ "0xkaze/z6services-back-end": {
+  "add": 1703,
+  "commits": 5,
+  "del": 23,
+  "oid": "0318359c56e1317886612cf15d3d1ee0afcd1cba"
+ },
+ "0xkaze/z6services-discord": {
+  "add": 1049952,
+  "commits": 19,
+  "del": 1793,
+  "oid": "d9dc4797c547a42cb8aafa8a191da618ff4bf4ef"
+ },
+ "0xkaze/z6smurfs-frontend": {
+  "add": 18667,
+  "commits": 3,
+  "del": 5,
+  "oid": "465aaaab12aee4cc6f9f3033dab2c5a0a95d9c54"
+ },
+ "Gambit-Markets/Gambit-For-Audit": {
+  "add": 0,
+  "commits": 0,
+  "del": 0,
+  "oid": "04d653291c52e024080f67af436a4060f8479af2"
+ },
+ "Gambit-Markets/Gambit-NewUI": {
+  "add": 505636,
+  "commits": 1586,
+  "del": 152294,
+  "oid": "e7e6f2f4dcc9a667775f75cb44a381ff23ed8756"
+ },
+ "Gambit-Markets/Gambit-Polymarket": {
+  "add": 4630,
+  "commits": 46,
+  "del": 1461,
+  "oid": "2a12669b25cd8220946116a011861175ba16ba39"
+ },
+ "Gambit-Markets/GambitMarkets-Landing": {
+  "add": 514,
+  "commits": 11,
+  "del": 1469,
+  "oid": "312f2c5b5ebade0cb0ec3b917d004aaefd077fce"
+ },
+ "Gambit-Markets/SportsGambit-Agent-Contract": {
+  "add": 0,
+  "commits": 0,
+  "del": 0,
+  "oid": "b0e3d76b304fbe26d951d823aca9baca4e870560"
+ },
+ "Gambit-Markets/SportsGambit-Backend": {
+  "add": 683335,
+  "commits": 2420,
+  "del": 148608,
+  "oid": "cf5fc945bed0c429b2a0e9a969767df668a2c4ba"
+ },
+ "Gambit-Markets/SportsGambit-Contract": {
+  "add": 0,
+  "commits": 0,
+  "del": 0,
+  "oid": "1c5f8d1c96fdaf5d6a66c907e31ce97864779109"
+ },
+ "Gambit-Markets/SportsGambit-Frontend": {
+  "add": 446,
+  "commits": 10,
+  "del": 126,
+  "oid": "e0f6d6cfa076deb4086a8d817a6b7ac8685a4c54"
+ },
+ "Gambit-Markets/SportsGambit-Landing": {
+  "add": 662,
+  "commits": 23,
+  "del": 210,
+  "oid": "9db3304652c0ff4608d29f0301b04e232e5cf600"
+ },
+ "MoonStar-sol/intelligent-journal-server": {
+  "add": 0,
+  "commits": 0,
+  "del": 0,
+  "oid": "e81294bb2b0ed82e28bf86af119cc74bc611082c"
+ },
+ "MoonStar-sol/soulsync-react-native": {
+  "add": 0,
+  "commits": 0,
+  "del": 0,
+  "oid": "6b606ddaf5af43dddd1928c85c386b0d44006651"
+ },
+ "Oper-Data-Talkers/CIMED_Foguete_Amarelo_API": {
+  "add": 2122,
+  "commits": 6,
+  "del": 762,
+  "oid": "1c0cf9d257495e93dfcc9193c233d18c6034837b"
+ },
+ "Oper-Data-Talkers/CIMED_Pedido_Sugerido_Simulador": {
+  "add": 2529,
+  "commits": 2,
+  "del": 1024,
+  "oid": "310217752ad822ff59f79ae91c89f5f88fd7e0a8"
+ },
+ "Oper-Data-Talkers/CIMED_RTM_API": {
+  "add": 168258,
+  "commits": 35,
+  "del": 1308,
+  "oid": "b2b4a11e9d0ba39c18af41633b8639279aad15df"
+ },
+ "Oper-Data-Talkers/CIMED_SQL_And_Views": {
+  "add": 0,
+  "commits": 1,
+  "del": 33,
+  "oid": "08fb42b86d18856e1e14d88d32a2664ee76497bc"
+ },
+ "Oper-Data-Talkers/CIMED_exploration": {
+  "add": 0,
+  "commits": 0,
+  "del": 0,
+  "oid": "1666777610422981d91f9e0192f89bcbdabf3544"
+ },
+ "Oper-Data-Talkers/OperSkills": {
+  "add": 0,
+  "commits": 0,
+  "del": 0,
+  "oid": "80ba65e8501826e87b8305fcf3f43e272ab60544"
+ },
+ "Oper-Data-Talkers/cimed-compliance-report": {
+  "add": 3699,
+  "commits": 3,
+  "del": 76,
+  "oid": "65fcc75af9dcf1bb891863820e3cc7e8f4f63a2c"
+ },
+ "Oper-Data-Talkers/cimed-foguete-amarelo-dash": {
+  "add": 19580,
+  "commits": 4,
+  "del": 3656,
+  "oid": "ab00c68b863201a5ec8591af04fcba81bbfa6631"
+ },
+ "Oper-Data-Talkers/cimed-projects-status": {
+  "add": 6909,
+  "commits": 17,
+  "del": 2801,
+  "oid": "a7cc63eb2ef85be18eb0edcbed2f3954fcd591e6"
+ },
+ "Oper-Data-Talkers/crmel": {
+  "add": 823236,
+  "commits": 1294,
+  "del": 109409,
+  "oid": "df0ebe5ca410230f0ef3fb911f1415d6c67624fc"
+ },
+ "Oper-Data-Talkers/flexrtm-algorithms": {
+  "add": 0,
+  "commits": 0,
+  "del": 0,
+  "oid": "d16fd29b68738c65d3228c96da56cdb575281aff"
+ },
+ "Oper-Data-Talkers/mel-bridge-crm-twilio": {
+  "add": 94766,
+  "commits": 178,
+  "del": 10532,
+  "oid": "d5b0c16e05e7c77ab22f3db24f363e2b6ac69afe"
+ },
+ "Oper-Data-Talkers/okajima-supplier-personalization": {
+  "add": 0,
+  "commits": 0,
+  "del": 0,
+  "oid": "95b806faaa6e2863fcccd5c43cf66600aadde36b"
+ },
+ "Oper-Data-Talkers/oper-ana": {
+  "add": 0,
+  "commits": 0,
+  "del": 0,
+  "oid": "d5eed9b1d62a7d37456d57880c33bd594343dbcd"
+ },
+ "Oper-Data-Talkers/oper-rtm-vendedores": {
+  "add": 32616,
+  "commits": 249,
+  "del": 9659,
+  "oid": "70085fe110b939215c492726dd04df5d2afed745"
+ },
+ "Oper-Data-Talkers/oper-studio": {
+  "add": 54257,
+  "commits": 79,
+  "del": 10925,
+  "oid": "f357b09eb25de4431f8a9605cd2cb98f0aca73cd"
+ },
+ "Oper-Data-Talkers/pinscher": {
+  "add": 0,
+  "commits": 0,
+  "del": 0,
+  "oid": "fd3bf7b365cd41991bf267ef88d7181e997dd2fc"
+ },
+ "Oper-Data-Talkers/solfarma-projeto-dashboard": {
+  "add": 1128,
+  "commits": 6,
+  "del": 210,
+  "oid": "726cce6e2c53b565154f57108ae439d005f8b9ee"
+ },
+ "Oper-Data-Talkers/uai": {
+  "add": 0,
+  "commits": 0,
+  "del": 0,
+  "oid": "0dbba05554991d8313c73ffc6a0bd52e6859b670"
+ },
+ "Pyramai/BBP": {
+  "add": 0,
+  "commits": 0,
+  "del": 0,
+  "oid": "6b4af69bc41e8136c666325e0930f456dafa5031"
+ },
+ "Pyramai/aaron_bot": {
+  "add": 0,
+  "commits": 0,
+  "del": 0,
+  "oid": "a9b8be9cec86cf904d314c78dc03869aa459f74e"
+ },
+ "Pyramai/askpaal": {
+  "add": 49550,
+  "commits": 164,
+  "del": 18389,
+  "oid": "f0480a0cfe19ad07bde4b071b7e42a9532a3ed10"
+ },
+ "Pyramai/backtest-hypertrade": {
+  "add": 19867,
+  "commits": 9,
+  "del": 326,
+  "oid": "3ed04d3617a18a44b78ae16f67dd89756bb41368"
+ },
+ "Pyramai/paal-website-test": {
+  "add": 10,
+  "commits": 1,
+  "del": 0,
+  "oid": "b6a003b55df9924a1cd37a06daafac1a8f478d49"
+ },
+ "Pyramai/paalx": {
+  "add": 0,
+  "commits": 0,
+  "del": 0,
+  "oid": "1a10cde31dd3d92cb8cbca8c065587fb1a6447c6"
+ },
+ "Pyramai/paalx-dev": {
+  "add": 0,
+  "commits": 0,
+  "del": 0,
+  "oid": "e8271566ff97d4068233f40abc9ff7d2ff1d1710"
+ },
+ "Pyramai/quantx-landing": {
+  "add": 8480,
+  "commits": 4,
+  "del": 248,
+  "oid": "088a6cd7dbe3027faa1dccc8a11beff28c2e9ee7"
+ },
+ "cassiompf/heimerbot-league": {
+  "add": 0,
+  "commits": 0,
+  "del": 0,
+  "oid": "47ca867ee4706a86d852d6641aa08abb2db22792"
+ },
+ "cassiompf/z6-converter": {
+  "add": 0,
+  "commits": 0,
+  "del": 0,
+  "oid": "4a034685256acf372c9e96b03eede64f83f40d64"
+ },
+ "herchi05/paalx-dev": {
+  "add": 0,
+  "commits": 0,
+  "del": 0,
+  "oid": "bc8a2c14e379b83246b3ccb2d210a9bf19bc6b55"
+ },
+ "herchi05/v0-login-and-chat-interface": {
+  "add": 0,
+  "commits": 0,
+  "del": 0,
+  "oid": "f938e6d6924357f4ce5e6b1f8517e53af1c82841"
+ },
+ "herchi05/x402-chat": {
+  "add": 1,
+  "commits": 1,
+  "del": 1,
+  "oid": "c8c186711a1444322ba02a481fcfc1e99e280afe"
+ },
+ "jscrui/launchpad-ui-v2": {
+  "add": 0,
+  "commits": 0,
+  "del": 0,
+  "oid": "6dc949a9b780cb2b918045e41fbc72bc01ca015f"
+ },
+ "trmarius/gambit-analytics": {
+  "add": 1945,
+  "commits": 3,
+  "del": 2222,
+  "oid": "f3d46e4ab25e10560a0e287a0a20cfa81e178329"
+ },
+ "weber77/paalx-dev-referrals": {
+  "add": 0,
+  "commits": 0,
+  "del": 0,
+  "oid": "bc8a2c14e379b83246b3ccb2d210a9bf19bc6b55"
  }
 }
