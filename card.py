@@ -7,6 +7,7 @@
 No dependencies beyond the Python standard library.
 """
 import datetime as dt
+import hashlib
 import json
 import os
 import pathlib
@@ -25,6 +26,8 @@ BIRTHDAY = None               # "YYYY-MM-DD" turns Uptime into "24 years, 1 mont
 AGE = 24                      # shown while BIRTHDAY is None
 TZ = dt.timezone(dt.timedelta(hours=-3))   # America/Sao_Paulo
 EXCLUDE = {f"{USER}/{USER}"}  # this repo's daily auto-commits stay out of the totals
+LOC_COMMIT_CAP = 10_000       # commits touching more lines than this (vendored deps, dumps,
+                              # generated files) are left out of Lines of Code; None = count all
 
 SECTIONS = [
     (None, [
@@ -120,6 +123,28 @@ def fetch_contributions():
     return commits, c["contributionCalendar"]["totalContributions"]
 
 
+def repo_loc(name, author_id):
+    """Additions/deletions over the user's own commits on a repo's default branch."""
+    owner, repo = name.split("/")
+    n = add = dele = 0
+    cursor = None
+    while True:
+        h = gql("""query($owner:String!,$name:String!,$id:ID!,$cursor:String){ repository(owner:$owner,name:$name){
+            defaultBranchRef{ target{ ... on Commit { history(first:100, after:$cursor, author:{id:$id}){
+              nodes{ additions deletions } pageInfo{ hasNextPage endCursor } } } } } } }""",
+                owner=owner, name=repo, id=author_id, cursor=cursor)
+        hist = h["repository"]["defaultBranchRef"]["target"]["history"]
+        for c in hist["nodes"]:
+            n += 1
+            if LOC_COMMIT_CAP and c["additions"] + c["deletions"] > LOC_COMMIT_CAP:
+                continue
+            add += c["additions"]
+            dele += c["deletions"]
+        if not hist["pageInfo"]["hasNextPage"]:
+            return {"commits": n, "add": add, "del": dele}
+        cursor = hist["pageInfo"]["endCursor"]
+
+
 def fetch_stats():
     u = gql("""query($login:String!){ user(login:$login){ id followers{ totalCount }
         owned: repositories(ownerAffiliations: OWNER){ totalCount }
@@ -140,33 +165,27 @@ def fetch_stats():
             break
         cursor = conn["pageInfo"]["endCursor"]
 
+    # this repo is public: the cache and the run logs only ever see a hash of each repo
+    # name, so private/org repo names never leak
     cache = json.loads(LOC_FILE.read_text()) if LOC_FILE.exists() else {}
     fresh = {}
     for r in repos:
         name = r["nameWithOwner"]
+        key = hashlib.sha256(name.lower().encode()).hexdigest()[:16]
         head = (r.get("defaultBranchRef") or {}).get("target") or {}
         if name in EXCLUDE or not head.get("oid"):
             continue
-        if cache.get(name, {}).get("oid") == head["oid"]:
-            fresh[name] = cache[name]
+        hit = cache.get(key, {})
+        if hit.get("oid") == head["oid"] and hit.get("cap") == LOC_COMMIT_CAP:
+            fresh[key] = hit
             continue
-        owner, repo = name.split("/")
-        n = add = dele = 0
-        cursor = None
-        while True:
-            h = gql("""query($owner:String!,$name:String!,$id:ID!,$cursor:String){ repository(owner:$owner,name:$name){
-                defaultBranchRef{ target{ ... on Commit { history(first:100, after:$cursor, author:{id:$id}){
-                  nodes{ additions deletions } pageInfo{ hasNextPage endCursor } } } } } } }""",
-                    owner=owner, name=repo, id=u["id"], cursor=cursor)
-            hist = h["repository"]["defaultBranchRef"]["target"]["history"]
-            for c in hist["nodes"]:
-                n += 1
-                add += c["additions"]
-                dele += c["deletions"]
-            if not hist["pageInfo"]["hasNextPage"]:
-                break
-            cursor = hist["pageInfo"]["endCursor"]
-        fresh[name] = {"oid": head["oid"], "commits": n, "add": add, "del": dele}
+        try:
+            fresh[key] = dict(oid=head["oid"], cap=LOC_COMMIT_CAP, **repo_loc(name, u["id"]))
+            print(f"loc {key}: {fresh[key]['commits']} commits", flush=True)
+        except Exception as e:  # one bad repo must not freeze the whole card
+            print(f"::warning::skipped repo {key} ({type(e).__name__})", file=sys.stderr, flush=True)
+            if key in cache:
+                fresh[key] = cache[key]
 
     LOC_FILE.parent.mkdir(exist_ok=True)
     LOC_FILE.write_text(json.dumps(fresh, indent=1, sort_keys=True) + "\n")
