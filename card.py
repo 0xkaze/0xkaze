@@ -11,6 +11,8 @@ import json
 import os
 import pathlib
 import sys
+import time
+import urllib.error
 import urllib.request
 from html import escape
 
@@ -86,11 +88,36 @@ def gql(query, **variables):
         data=json.dumps({"query": query, "variables": variables}).encode(),
         headers={"Authorization": f"bearer {TOKEN}", "Content-Type": "application/json"},
     )
-    with urllib.request.urlopen(req, timeout=60) as r:
-        data = json.load(r)
+    for attempt in range(4):  # big histories occasionally 502/timeout; back off and retry
+        try:
+            with urllib.request.urlopen(req, timeout=90) as r:
+                data = json.load(r)
+            break
+        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as e:
+            if attempt == 3 or getattr(e, "code", 502) in (401, 403, 404):
+                raise
+            time.sleep(5 * (attempt + 1))
     if data.get("errors"):
         raise RuntimeError(data["errors"])
     return data["data"]
+
+
+def fetch_contributions():
+    """Same numbers GitHub's own profile shows: the calendar total for the last year, and
+    commit contributions summed over every year (private ones too when the token can see them)."""
+    c = gql("""query($login:String!){ user(login:$login){ contributionsCollection{
+        contributionYears contributionCalendar{ totalContributions } } } }""", login=USER)
+    c = c["user"]["contributionsCollection"]
+    now = dt.datetime.now(dt.timezone.utc)
+    commits = 0
+    for year in c["contributionYears"]:
+        start = dt.datetime(year, 1, 1, tzinfo=dt.timezone.utc)
+        end = min(dt.datetime(year, 12, 31, 23, 59, 59, tzinfo=dt.timezone.utc), now)
+        y = gql("""query($login:String!,$from:DateTime!,$to:DateTime!){ user(login:$login){
+            contributionsCollection(from:$from, to:$to){ totalCommitContributions } } }""",
+                login=USER, **{"from": start.isoformat(), "to": end.isoformat()})
+        commits += y["user"]["contributionsCollection"]["totalCommitContributions"]
+    return commits, c["contributionCalendar"]["totalContributions"]
 
 
 def fetch_stats():
@@ -98,6 +125,7 @@ def fetch_stats():
         owned: repositories(ownerAffiliations: OWNER){ totalCount }
         all: repositories(ownerAffiliations: [OWNER, COLLABORATOR, ORGANIZATION_MEMBER]){ totalCount } } }""",
             login=USER)["user"]
+    commits, contributions_year = fetch_contributions()
 
     repos, cursor = [], None
     while True:
@@ -123,7 +151,7 @@ def fetch_stats():
             fresh[name] = cache[name]
             continue
         owner, repo = name.split("/")
-        commits = add = dele = 0
+        n = add = dele = 0
         cursor = None
         while True:
             h = gql("""query($owner:String!,$name:String!,$id:ID!,$cursor:String){ repository(owner:$owner,name:$name){
@@ -132,13 +160,13 @@ def fetch_stats():
                     owner=owner, name=repo, id=u["id"], cursor=cursor)
             hist = h["repository"]["defaultBranchRef"]["target"]["history"]
             for c in hist["nodes"]:
-                commits += 1
+                n += 1
                 add += c["additions"]
                 dele += c["deletions"]
             if not hist["pageInfo"]["hasNextPage"]:
                 break
             cursor = hist["pageInfo"]["endCursor"]
-        fresh[name] = {"oid": head["oid"], "commits": commits, "add": add, "del": dele}
+        fresh[name] = {"oid": head["oid"], "commits": n, "add": add, "del": dele}
 
     LOC_FILE.parent.mkdir(exist_ok=True)
     LOC_FILE.write_text(json.dumps(fresh, indent=1, sort_keys=True) + "\n")
@@ -149,7 +177,8 @@ def fetch_stats():
         "contributed": u["all"]["totalCount"],
         "stars": sum(r["stargazerCount"] for r in repos if r["owner"]["login"].lower() == USER.lower()),
         "followers": u["followers"]["totalCount"],
-        "commits": sum(v["commits"] for v in fresh.values()),
+        "commits": commits,
+        "contributions_year": contributions_year,
         "loc_add": add,
         "loc_del": dele,
     }
@@ -218,6 +247,7 @@ def stats_rows(s):
         kv("Stars", num(s.get("stars")), right, left + 3, bullet=False)
     r2 = kv("Commits", num(s.get("commits")), left) + [(left, " | ", "cc")] + \
         kv("Followers", num(s.get("followers")), right, left + 3, bullet=False)
+    r3 = kv("Contributions (last year)", num(s.get("contributions_year")))
     total = None if s.get("loc_add") is None else s["loc_add"] - s["loc_del"]
     parts = [(num(total), "value"), (" ( ", "cc"), (f"{num(s.get('loc_add'))}++", "add"),
              (", ", "cc"), (f"{num(s.get('loc_del'))}--", "dele"), (" )", "cc")]
@@ -226,7 +256,7 @@ def stats_rows(s):
     for t, c in parts:
         runs.append((col, t, c))
         col += len(t)
-    return [r1, r2, runs]
+    return [r1, r2, r3, runs]
 
 
 def panel_rows(stats, today):
